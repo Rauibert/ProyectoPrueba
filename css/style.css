@@ -1,15 +1,12 @@
-
-body{
-	background-color: #B0B6BC;
+body {
+  background-color: rgba(65, 152, 232, 0.56);
 }
-
-article{
-	color: #000060;
+article {
+  color: #0d16e0;
 }
-
-.letraPrimera{
-	font-size: 1.6em;
-	font-weight: bold;
-	border: 1px solid;
-	background-color: #FFFFFF;
+.letraPrimera {
+  font-size: 1.6em;
+  font-weight: bold;
+  border: 1px solid;
+  background-color: #FFFFFF;
 }
