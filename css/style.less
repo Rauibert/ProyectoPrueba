@@ -4,14 +4,49 @@
 
 @colorLetra: rgb(13, 22, 224);
 @colorFondo: rgba(65, 152, 232, 0.56);
+@colorHeader: rgba(37, 144, 236, 1);
+@colorNav: rgba(37, 144, 236, 0.7);
 
 
 body{
 	background-color: @colorFondo;
+	margin: 0;
+
+}
+
+header{
+	margin: 0;
+	height: 80px;
+	padding: 10px;
+	border-bottom: 1px solid darken(@colorHeader, 30%);
+	background-color: @colorHeader;
+}
+
+nav{
+	background-color: @colorNav;
+	border-bottom: 1px solid darken(@colorNav, 30%);
+	height: 20px;
+	padding: 15px;
+}
+
+aside{
+	height: 40px;
+	padding: 15px;
 }
 
 article{
 	color: @colorLetra;
+	padding: 3%;
+}
+
+
+footer{
+	margin: 0;
+	height: 80px;
+	padding: 10px;
+	border-bottom: 1px solid darken(@colorHeader, 30%);
+	border-top: 1px solid darken(@colorHeader, 30%);
+	background-color: @colorHeader;
 }
 
 .letraPrimera {

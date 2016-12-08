@@ -1,8 +1,35 @@
 body {
   background-color: rgba(65, 152, 232, 0.56);
+  margin: 0;
+}
+header {
+  margin: 0;
+  height: 80px;
+  padding: 10px;
+  border-bottom: 1px solid #0a406e;
+  background-color: #2590ec;
+}
+nav {
+  background-color: rgba(37, 144, 236, 0.7);
+  border-bottom: 1px solid rgba(10, 64, 110, 0.7);
+  height: 20px;
+  padding: 15px;
+}
+aside {
+  height: 40px;
+  padding: 15px;
 }
 article {
   color: #0d16e0;
+  padding: 3%;
+}
+footer {
+  margin: 0;
+  height: 80px;
+  padding: 10px;
+  border-bottom: 1px solid #0a406e;
+  border-top: 1px solid #0a406e;
+  background-color: #2590ec;
 }
 .letraPrimera {
   font-size: 1.6em;
