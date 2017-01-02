@@ -1,22 +1,13 @@
 // out: style.css
 //main: style.less
 
-//VARIABLES
-@colorLetra: black;
-@colorFondo: rgba(65, 152, 232, 0.56);
-@colorHeader: rgba(37, 144, 236, 1);
-@colorNav: rgba(37, 144, 236, 0.7);
-
-@separador: "+ ";
-
-@imgpath:"../img";
-@letra: "Orbitron";
-
+@import "variables.less";
 
 body{
 	background-color: @colorFondo;
 	margin: 0;
 	font-family: @letra;
+	font-size: 0.8em;
 
 }
 
@@ -51,6 +42,22 @@ aside{
 article{
 	color: @colorLetra;
 	padding: 3%;
+	border: 1px solid darken(@colorNav,20%);
+	background-color: fade(white,85%);
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px lighten(black, 2%);
+
+	h2{
+		font-size: 1.8em;
+		color: darken(@colorHeader, 38%)
+	}
+
+	&::after{
+		content:"Leer más";
+		color: @colorLeerMas;
+	}
+
 }
 
 a::before{

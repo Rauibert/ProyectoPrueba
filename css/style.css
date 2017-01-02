@@ -2,6 +2,7 @@ body {
   background-color: rgba(65, 152, 232, 0.56);
   margin: 0;
   font-family: "Orbitron";
+  font-size: 0.8em;
 }
 header {
   margin: 0;
@@ -28,8 +29,21 @@ aside {
   padding: 15px;
 }
 article {
-  color: black;
+  color: #1a1a1a;
   padding: 3%;
+  border: 1px solid rgba(14, 91, 157, 0.7);
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #050505;
+}
+article h2 {
+  font-size: 1.8em;
+  color: #062a49;
+}
+article::after {
+  content: "Leer más";
+  color: #996300;
 }
 a::before {
   content: "+ ";
