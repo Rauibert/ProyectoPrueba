@@ -1,0 +1,5 @@
+
+#Ignora todos los archivos de las carpetas que esten dentro de recursos
+recursos/../*.*
+
+recursos/

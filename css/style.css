@@ -1,3 +1,12 @@
+.square {
+  background-color: red;
+  border: 2px solid #990000;
+}
+.anchomaximo {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 body {
   background-color: rgba(65, 152, 232, 0.56);
   margin: 0;
@@ -10,6 +19,8 @@ header {
   padding: 10px;
   border-bottom: 1px solid #0a406e;
   background-color: #2590ec;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 #imagen {
   background-image: url("../img/Less.png");
@@ -25,8 +36,31 @@ nav {
   padding: 15px;
 }
 aside {
-  height: 40px;
+  height: 100px;
   padding: 15px;
+}
+.square1 {
+  width: 200px;
+  height: 100px;
+  float: left;
+  background-color: red;
+  border: 2px solid #990000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white;
+}
+.square2 {
+  width: 300px;
+  height: 100px;
+  float: right;
+  background-color: red;
+  border: 2px solid #990000;
+}
+#contenedor-squares {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 article {
   color: #1a1a1a;
@@ -39,7 +73,8 @@ article {
 }
 article h2 {
   font-size: 1.8em;
-  color: #062a49;
+  color: rgba(0, 0, 0, 0.56);
+  color: rgba(65, 152, 232, 0.56);
 }
 article::after {
   content: "Leer más";
