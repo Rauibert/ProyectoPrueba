@@ -50,3 +50,18 @@
 .esquemaColor(@_){
   color: @colorFondo;
 }
+
+.ancho(@width) when (@width > 50%){
+  width: @width;
+  margin: 0 auto;
+}
+
+.mediaquery(@float:left) when (@bp = mobile) and not (@width = 80%){
+  width: 40%;
+  float: left;
+}
+
+.mediaquery(@width) when (@bp = desktop) {
+  .ancho(@width);
+  float: none;
+}
