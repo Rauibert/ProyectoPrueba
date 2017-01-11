@@ -1,11 +1,46 @@
 .square {
-  background-color: red;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #345678), color-stop(100%, #FF7654));
+  background: -webkit-linear-gradient(top, #345678, #FF7654);
+  background: -moz-linear-gradient(top, #345678, #FF7654);
+  background: -o-linear-gradient(top, #345678, #FF7654);
+  background: linear-gradient(top, #345678, #FF7654);
+  background-color: #345678;
   border: 2px solid #990000;
 }
 .anchomaximo {
-  max-width: 600px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
+}
+.boton {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2db0f2), color-stop(100%, #0b3052));
+  background: -webkit-linear-gradient(top, #2db0f2, #0b3052);
+  background: -moz-linear-gradient(top, #2db0f2, #0b3052);
+  background: -o-linear-gradient(top, #2db0f2, #0b3052);
+  background: linear-gradient(top, #2db0f2, #0b3052);
+  background-color: #2db0f2;
+  border: 1px solid #0b77ae;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 25.6px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 body {
   background-color: rgba(65, 152, 232, 0.56);
@@ -36,29 +71,40 @@ nav {
   padding: 15px;
 }
 aside {
-  height: 100px;
-  padding: 15px;
+  height: 200px;
 }
 .square1 {
-  width: 200px;
   height: 100px;
   float: left;
-  background-color: red;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #345678), color-stop(100%, #FF7654));
+  background: -webkit-linear-gradient(top, #345678, #FF7654);
+  background: -moz-linear-gradient(top, #345678, #FF7654);
+  background: -o-linear-gradient(top, #345678, #FF7654);
+  background: linear-gradient(top, #345678, #FF7654);
+  background-color: #345678;
   border: 2px solid #990000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 47.4375%;
+  margin: 0 1.03125%;
   color: white;
 }
 .square2 {
-  width: 300px;
+  width: 47.4375%;
+  margin: 0 1.03125%;
   height: 100px;
-  float: right;
-  background-color: red;
+  float: left;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #345678), color-stop(100%, #FF7654));
+  background: -webkit-linear-gradient(top, #345678, #FF7654);
+  background: -moz-linear-gradient(top, #345678, #FF7654);
+  background: -o-linear-gradient(top, #345678, #FF7654);
+  background: linear-gradient(top, #345678, #FF7654);
+  background-color: #345678;
   border: 2px solid #990000;
 }
 #contenedor-squares {
-  max-width: 600px;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -100,4 +146,40 @@ footer {
   border: 1px solid;
   background-color: #2590ec;
   border-radius: 5px;
+}
+#botonera {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 0;
+}
+#botonera li {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2db0f2), color-stop(100%, #0b3052));
+  background: -webkit-linear-gradient(top, #2db0f2, #0b3052);
+  background: -moz-linear-gradient(top, #2db0f2, #0b3052);
+  background: -o-linear-gradient(top, #2db0f2, #0b3052);
+  background: linear-gradient(top, #2db0f2, #0b3052);
+  background-color: #2db0f2;
+  border: 1px solid #0b77ae;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px 25.6px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }

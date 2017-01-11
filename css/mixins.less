@@ -1,7 +1,7 @@
 @import "variables.less";
 
 .square{
-  background-color: red;
+  .gradiente(#345678, #FF7654);
   border: 2px solid darken(red, 20%);
 }
 
@@ -64,4 +64,22 @@
 .mediaquery(@width) when (@bp = desktop) {
   .ancho(@width);
   float: none;
+}
+
+.border-radius(@radius : 4px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+
+//Gradiente
+.gradiente(@colorDesde:#FF4545, @colorHasta:#D78909){
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, @colorDesde), color-stop(100%, @colorHasta));
+  background: -webkit-linear-gradient(top, @colorDesde, @colorHasta);
+  background: -moz-linear-gradient(top,  @colorDesde, @colorHasta);
+  background: -o-linear-gradient(top,  @colorDesde, @colorHasta);
+  background: linear-gradient(top,  @colorDesde, @colorHasta);
+  background-color: @colorDesde;
 }

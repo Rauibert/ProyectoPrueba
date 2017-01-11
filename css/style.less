@@ -3,6 +3,8 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "botones.less";
+@import "grid.less";
 
 body{
 	background-color: @colorFondo;
@@ -36,23 +38,22 @@ nav{
 }
 
 aside{
-	height: 100px;
-	padding: 15px;
+	height: 200px;
 }
 
 .square1{
-	width: 200px;
 	height: 100px;
 	float: left;
 	.square;
 	.text-overflow();
+	.columnas(6);
 	color: white;
 }
 
 .square2{
-	width: 300px;
+	.columnas(6);
 	height: 100px;
-	float: right;
+	float: left;
 	.square;
 }
 
@@ -70,7 +71,7 @@ article{
 	.mediaquery(70%);
 	margin-top: 10px;
 
-	
+
 	h2{
 		font-size: 1.8em;
 		.esquemaColor(@esquema);
@@ -103,4 +104,14 @@ footer{
     border: 1px solid;
     background-color:  @colorHeader;
 		border-radius: 5px;
+}
+
+#botonera {
+	width: 20%;
+	margin:0 auto;
+	margin-bottom: 20px;
+	padding: 0;
+	li {
+		.boton();
+	}
 }
