@@ -3,3 +3,5 @@
 recursos/../*.*
 
 recursos/
+
+node_modules/
